@@ -1,0 +1,251 @@
+.quations-content {
+    display: flex;
+}
+
+.visually-hidden {
+    font-size: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+  }
+
+.quations-block {
+    padding: 180px 0 30% 0;
+    width: 59%;
+    border-right: 3px solid #524A4A;
+}
+
+.quations-info {
+    width: 41%;
+    box-sizing: border-box;
+    padding: 28px 31px;
+}
+
+.quations-info__description {
+    font-family: 'IBMPlexSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.quation__count {
+    font-family: 'IBMPlexSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #524A4A;
+    margin: 0;
+}
+
+.quation__control {
+    display: flex;
+    margin: 18px 0 0 0;
+}
+
+.quation__text {
+    font-family: 'IBMPlexSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #524A4A;
+    margin: 0;
+}
+
+.result-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0 0 0 20px;
+}
+
+.quation-options {
+    margin: 65px 0 0 0;
+}
+.quation-options__option {
+    margin: 0 0 23px 0;
+}
+
+.quation-options__option label {
+    position: relative;
+    font-family: 'IBMPlexSans';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 32px;
+    color: #524A4A;
+    text-transform: uppercase;
+    padding: 0 0 0 34px;
+    cursor: pointer;
+}
+
+.quation-options__option:hover label {
+    color: #fff;
+}
+
+.quation-options__option label::before {
+    position: absolute;
+    content: "";
+    background-color: #000000;
+}
+
+.quation-options__option:nth-child(1) label:before {
+    width: 23px;
+    height: 23px;
+    top: 5px;
+    left: 0;
+}
+
+.quation-options__option:nth-child(2) label:before {
+    background-image: url(../img/icon-star-black.svg);
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -10px;
+    background-color: transparent;
+}
+
+.quation-options__option:nth-child(3) label:before {
+    width: 26px;
+    height: 26px;
+    top: 5px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.quation-options__option:nth-child(4) label:before {
+    width: 23px;
+    height: 23px;
+    top: 5px;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.quation-options__option input:checked + label:before {
+    background-color: #ffffff;
+  }
+
+  .quation-options__option:nth-child(2) input:checked + label:before {
+    background-color: transparent;
+    background-image: url(../img/icon-star-white.svg);
+  }
+
+  .result {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .result h2 {
+    font-family: 'IBMPlexSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #524A4A;
+  }
+
+@media(max-width: 1440px) {
+    .quations-info__description {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    
+    .quation__count {
+        font-size: 23px;
+    }
+    
+    .quation__text {
+        font-size: 23px;
+        line-height: 1;
+    }
+
+    .quation-options__option {
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width: 1366px) {
+    .quations-block {
+        padding: 28px 0 0 0;
+    }
+
+    .result {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    
+      .result h2 {
+        font-family: 'IBMPlexSans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #524A4A;
+        margin: 0 0 30px 0;
+      }
+}
+
+@media(max-width: 1024px) {
+    .quations-content {
+        flex-direction: column;
+    }
+
+    .quations-block {
+        padding: 180px 0 23% 0;
+        width: 100%;
+        border-right: none;
+    }
+
+    .quations-info {
+        width: 62%;
+    }
+
+    .quations-info__description {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .quation__count {
+        font-size: 18px;
+    }
+
+    .quation__control {
+        margin: 12px 0 0 0;
+    }
+
+    .quation__text {
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .quation-options__option label{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .quation-options {
+        margin: 52px 0 0 11px;
+    }
+}
+
+@media(max-width: 768px) {
+    .quations-block {
+        padding: 56px 0 16% 0;
+    }
+
+    .quations-info {
+        width: 100%;
+    }
+}
